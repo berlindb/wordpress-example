@@ -17,18 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $plugin_dir = plugin_dir_path( __FILE__ );
 
 /**
- * REQUIRE BERLINDB FILES.
- * For now, BerlinDB files are manually required.
+ * REQUIRE BERLINDB.
  */
-require_once( $plugin_dir . 'core/base.php' );
-require_once( $plugin_dir . 'core/column.php' );
-require_once( $plugin_dir . 'core/meta.php' );
-require_once( $plugin_dir . 'core/compare.php' );
-require_once( $plugin_dir . 'core/date.php' );
-require_once( $plugin_dir . 'core/query.php' );
-require_once( $plugin_dir . 'core/row.php' );
-require_once( $plugin_dir . 'core/schema.php' );
-require_once( $plugin_dir . 'core/table.php' );
+require_once( $plugin_dir . 'core/autoloader.php' );
 
 /**
  * BOOKS TABLE REQUIRED FILES.
