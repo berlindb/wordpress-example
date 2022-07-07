@@ -158,6 +158,10 @@ add_action( 'init', function () {
  * This example hooks into WordPress's the_content, but this could be done anywhere.
  */
 add_filter( 'the_content', function ( $content ) {
+	if ( defined('REST_REQUEST') ) {
+		return $content;
+	}
+
 	$query = new Book_Query( [
 		'author'  => 'J.K. Rowling',   // Only get books written by J.K Rowling
 		'orderby' => 'date_published', // Sort the books by the date they were published
