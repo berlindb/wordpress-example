@@ -10,6 +10,7 @@ This plugin is intended for you to clone, hack, and learn how BerlinDB works.
 ## Setup
 
 1. Clone this repository in your WordPress install's `plugins` directory.
-1. Activate the plugin.
-1. Visit a page or post in WordPress
-1. The Harry Potter book series should display alongside your blog content.
+2. Change into this plugin's directory and run: `git submodule update --init --recursive`
+3. Activate the plugin.
+4. Visit a page or post in WordPress
+5. The Harry Potter book series should display alongside your blog content.
