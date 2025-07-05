@@ -22,8 +22,8 @@ class Book extends BerlinDB\Database\Row {
 		$this->isbn           = (string) $this->isbn;
 		$this->title          = (string) $this->title;
 		$this->author         = (string) $this->author;
-		$this->date_created   = false === $this->date ? 0 : strtotime( $this->date_created );
-		$this->date_published = false === $this->date ? 0 : strtotime( $this->date_published );
+		$this->date_created   = false === $this->date_created ? 0 : strtotime( $this->date_created );
+		$this->date_published = false === $this->date_published ? 0 : strtotime( $this->date_published );
 	}
 
 	/**
